@@ -6,7 +6,7 @@
  * Description:       Provides additional utilities for working with CiviCRM.
  * Plugin URI:        https://github.com/christianwach/haystack-civicrm-utilities
  * GitHub Plugin URI: https://github.com/christianwach/haystack-civicrm-utilities
- * Version:           1.0.0a
+ * Version:           1.0.0b
  * Author:            Christian Wach
  * Author URI:        https://haystack.co.uk
  * Text Domain:       haystack-civicrm-utilities
@@ -20,7 +20,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Version.
-define( 'HAYSTACK_CU_VERSION', '1.0.0a' );
+define( 'HAYSTACK_CU_VERSION', '1.0.0b' );
 
 // Main plugin file.
 if ( ! defined( 'HAYSTACK_CU_FILE' ) ) {
