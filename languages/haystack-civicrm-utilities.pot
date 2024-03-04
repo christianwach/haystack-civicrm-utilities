@@ -1,0 +1,1809 @@
+# Copyright (C) 2024 Christian Wach
+# This file is distributed under the same license as the Haystack CiviCRM Utilities plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Haystack CiviCRM Utilities 1.0.0b\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/haystack-civicrm-utilities\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-04T16:12:19+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: haystack-civicrm-utilities\n"
+
+#. Plugin Name of the plugin
+#: haystack-civicrm-utilities.php
+#: includes/admin/class-admin-page-settings.php:113
+#: includes/admin/class-admin-page-settings.php:117
+msgid "Haystack CiviCRM Utilities"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: haystack-civicrm-utilities.php
+msgid "https://github.com/christianwach/haystack-civicrm-utilities"
+msgstr ""
+
+#. Description of the plugin
+#: haystack-civicrm-utilities.php
+msgid "Provides additional utilities for working with CiviCRM."
+msgstr ""
+
+#. Author of the plugin
+#: haystack-civicrm-utilities.php
+msgid "Christian Wach"
+msgstr ""
+
+#. Author URI of the plugin
+#: haystack-civicrm-utilities.php
+msgid "https://haystack.co.uk"
+msgstr ""
+
+#: assets/templates/wordpress/settings/help/page-settings-help.php:16
+msgid "Settings: For further information about using this plugin, please refer to the readme file that is supplied with it."
+msgstr ""
+
+#: assets/templates/wordpress/settings/metaboxes/metabox-settings-cpts.php:18
+msgid "Active Custom Post Types"
+msgstr ""
+
+#: assets/templates/wordpress/settings/metaboxes/metabox-settings-submit.php:23
+msgid "Save your settings here."
+msgstr ""
+
+#: assets/templates/wordpress/settings/metaboxes/metabox-settings-submit.php:47
+msgid "Update"
+msgstr ""
+
+#: assets/templates/wordpress/settings/pages/page-settings.php:24
+msgid "Settings saved."
+msgstr ""
+
+#: includes/admin/class-admin-loader.php:134
+msgid "All Contribution Pages"
+msgstr ""
+
+#: includes/admin/class-admin-loader.php:148
+msgid "All Memberships"
+msgstr ""
+
+#: includes/admin/class-admin-loader.php:162
+msgid "All Events"
+msgstr ""
+
+#: includes/admin/class-admin-loader.php:176
+msgid "All Mailings"
+msgstr ""
+
+#: includes/admin/class-admin-loader.php:192
+msgid "WordPress Permissions"
+msgstr ""
+
+#: includes/admin/class-admin-loader.php:204
+msgid "API Explorer v3"
+msgstr ""
+
+#: includes/admin/class-admin-loader.php:216
+msgid "API Explorer v4"
+msgstr ""
+
+#: includes/admin/class-admin-page-settings.php:114
+msgid "Settings for Haystack CiviCRM Utilities"
+msgstr ""
+
+#: includes/admin/class-admin-page-settings.php:115
+#: includes/admin/class-admin-page-settings.php:118
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin-page-settings.php:116
+msgid "Haystack Utilities"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:72
+#: includes/cpt/class-cpt-activities.php:83
+#: includes/cpt/class-cpt-loader.php:368
+msgid "Activities"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:73
+msgid "Activity"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:74
+#: includes/cpt/class-cpt-employees.php:74
+#: includes/cpt/class-cpt-households.php:74
+#: includes/cpt/class-cpt-organisations.php:90
+#: includes/cpt/class-cpt-parents.php:74
+#: includes/cpt/class-cpt-participants.php:90
+#: includes/cpt/class-cpt-partners.php:90
+#: includes/cpt/class-cpt-speakers.php:90
+#: includes/cpt/class-cpt-sponsors.php:106
+#: includes/cpt/class-cpt-students.php:106
+msgid "Add New"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:75
+msgid "Add New Activity"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:76
+msgid "Edit Activity"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:77
+msgid "New Activity"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:78
+msgid "All Activities"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:79
+msgid "View Activity"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:80
+msgid "Search Activities"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:81
+msgid "No matching Activity found"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:82
+msgid "No Activities found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:104
+msgid "An activity post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-activities.php:154
+msgid "Activity updated. <a href=\"%s\">View Activity</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:159
+#: includes/cpt/class-cpt-employees.php:159
+#: includes/cpt/class-cpt-households.php:159
+#: includes/cpt/class-cpt-organisations.php:175
+#: includes/cpt/class-cpt-parents.php:159
+#: includes/cpt/class-cpt-participants.php:175
+#: includes/cpt/class-cpt-partners.php:175
+#: includes/cpt/class-cpt-speakers.php:175
+#: includes/cpt/class-cpt-sponsors.php:191
+#: includes/cpt/class-cpt-students.php:191
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:160
+#: includes/cpt/class-cpt-employees.php:160
+#: includes/cpt/class-cpt-households.php:160
+#: includes/cpt/class-cpt-organisations.php:176
+#: includes/cpt/class-cpt-parents.php:160
+#: includes/cpt/class-cpt-participants.php:176
+#: includes/cpt/class-cpt-partners.php:176
+#: includes/cpt/class-cpt-speakers.php:176
+#: includes/cpt/class-cpt-sponsors.php:192
+#: includes/cpt/class-cpt-students.php:192
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:161
+msgid "Activity updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-activities.php:170
+msgid "Activity restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-activities.php:181
+msgid "Activity published. <a href=\"%s\">View Activity</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:186
+msgid "Activity saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-activities.php:191
+msgid "Activity submitted. <a target=\"_blank\" href=\"%s\">Preview Activity</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-activities.php:198
+msgid "Activity scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Activity</a>"
+msgstr ""
+
+#. translators: Publish box date format - see https://php.net/date
+#: includes/cpt/class-cpt-activities.php:200
+#: includes/cpt/class-cpt-employees.php:200
+#: includes/cpt/class-cpt-households.php:200
+#: includes/cpt/class-cpt-organisations.php:216
+#: includes/cpt/class-cpt-parents.php:200
+#: includes/cpt/class-cpt-participants.php:216
+#: includes/cpt/class-cpt-partners.php:216
+#: includes/cpt/class-cpt-speakers.php:216
+#: includes/cpt/class-cpt-sponsors.php:232
+#: includes/cpt/class-cpt-students.php:232
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-activities.php:207
+msgid "Activity draft updated. <a target=\"_blank\" href=\"%s\">Preview Activity</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:234
+msgid "Add the name of the Activity"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:258
+msgctxt "taxonomy general name"
+msgid "Activity Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:259
+msgctxt "taxonomy singular name"
+msgid "Activity Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:260
+msgid "Search Activity Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:261
+msgid "All Activity Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:262
+msgid "Parent Activity Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:263
+msgid "Parent Activity Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:264
+msgid "Edit Activity Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:265
+msgid "Update Activity Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:266
+msgid "Add New Activity Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:267
+msgid "New Activity Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:268
+msgid "Activity Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-activities.php:269
+msgid "No Activity Types found"
+msgstr ""
+
+#. translators: %s: The plural name of the taxonomy terms.
+#: includes/cpt/class-cpt-base.php:227
+#: includes/cpt/class-cpt-base.php:299
+#: includes/cpt/class-cpt-base.php:346
+msgid "Show All %s"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:72
+#: includes/cpt/class-cpt-employees.php:83
+#: includes/cpt/class-cpt-loader.php:369
+msgid "Employees"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:73
+msgid "Employee"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:75
+msgid "Add New Employee"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:76
+msgid "Edit Employee"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:77
+msgid "New Employee"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:78
+msgid "All Employees"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:79
+msgid "View Employee"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:80
+msgid "Search Employees"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:81
+msgid "No matching Employee found"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:82
+msgid "No Employees found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:104
+msgid "An employees post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-employees.php:154
+msgid "Employee updated. <a href=\"%s\">View Employee</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:161
+msgid "Employee updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-employees.php:170
+msgid "Employee restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-employees.php:181
+msgid "Employee published. <a href=\"%s\">View Employee</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:186
+msgid "Employee saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-employees.php:191
+msgid "Employee submitted. <a target=\"_blank\" href=\"%s\">Preview Employee</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-employees.php:198
+msgid "Employee scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Employee</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-employees.php:207
+msgid "Employee draft updated. <a target=\"_blank\" href=\"%s\">Preview Employee</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:234
+msgid "Add the name of the Employee"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:256
+msgctxt "taxonomy general name"
+msgid "Employee Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:257
+msgctxt "taxonomy singular name"
+msgid "Employee Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:258
+msgid "Search Employee Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:259
+msgid "All Employee Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:260
+msgid "Parent Employee Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:261
+msgid "Parent Employee Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:262
+msgid "Edit Employee Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:263
+msgid "Update Employee Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:264
+msgid "Add New Employee Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:265
+msgid "New Employee Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:266
+msgid "Employee Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-employees.php:267
+msgid "No Employee Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:72
+#: includes/cpt/class-cpt-households.php:83
+#: includes/cpt/class-cpt-loader.php:370
+msgid "Households"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:73
+msgid "Household"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:75
+msgid "Add New Household"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:76
+msgid "Edit Household"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:77
+msgid "New Household"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:78
+msgid "All Households"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:79
+msgid "View Household"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:80
+msgid "Search Households"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:81
+msgid "No matching Household found"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:82
+msgid "No Households found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:104
+msgid "A household post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-households.php:154
+msgid "Household updated. <a href=\"%s\">View Household</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:161
+msgid "Household updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-households.php:170
+msgid "Household restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-households.php:181
+msgid "Household published. <a href=\"%s\">View Household</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:186
+msgid "Household saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-households.php:191
+msgid "Household submitted. <a target=\"_blank\" href=\"%s\">Preview Household</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-households.php:198
+msgid "Household scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Household</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-households.php:207
+msgid "Household draft updated. <a target=\"_blank\" href=\"%s\">Preview Household</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:234
+msgid "Add the name of the Household"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:256
+msgctxt "taxonomy general name"
+msgid "Household Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:257
+msgctxt "taxonomy singular name"
+msgid "Household Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:258
+msgid "Search Household Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:259
+msgid "All Household Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:260
+msgid "Parent Household Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:261
+msgid "Parent Household Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:262
+msgid "Edit Household Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:263
+msgid "Update Household Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:264
+msgid "Add New Household Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:265
+msgid "New Household Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:266
+msgid "Household Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-households.php:267
+msgid "No Household Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:284
+msgid "Custom Post Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:371
+#: includes/cpt/class-cpt-organisations.php:88
+#: includes/cpt/class-cpt-organisations.php:99
+msgid "Organisations"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:372
+#: includes/cpt/class-cpt-parents.php:72
+#: includes/cpt/class-cpt-parents.php:83
+msgid "Parents"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:373
+#: includes/cpt/class-cpt-participants.php:88
+#: includes/cpt/class-cpt-participants.php:99
+msgid "Participants"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:374
+#: includes/cpt/class-cpt-partners.php:88
+#: includes/cpt/class-cpt-partners.php:99
+msgid "Partners"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:375
+#: includes/cpt/class-cpt-speakers.php:88
+#: includes/cpt/class-cpt-speakers.php:99
+msgid "Speakers"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:376
+#: includes/cpt/class-cpt-sponsors.php:104
+#: includes/cpt/class-cpt-sponsors.php:115
+msgid "Sponsors"
+msgstr ""
+
+#: includes/cpt/class-cpt-loader.php:377
+#: includes/cpt/class-cpt-students.php:104
+#: includes/cpt/class-cpt-students.php:115
+msgid "Students"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:89
+msgid "Organisation"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:91
+msgid "Add New Organisation"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:92
+msgid "Edit Organisation"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:93
+msgid "New Organisation"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:94
+msgid "All Organisations"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:95
+msgid "View Organisation"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:96
+msgid "Search Organisations"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:97
+msgid "No matching Organisation found"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:98
+msgid "No Organisations found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:120
+msgid "An organisation post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-organisations.php:170
+msgid "Organisation updated. <a href=\"%s\">View Organisation</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:177
+msgid "Organisation updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-organisations.php:186
+msgid "Organisation restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-organisations.php:197
+msgid "Organisation published. <a href=\"%s\">View Organisation</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:202
+msgid "Organisation saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-organisations.php:207
+msgid "Organisation submitted. <a target=\"_blank\" href=\"%s\">Preview Organisation</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-organisations.php:214
+msgid "Organisation scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Organisation</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-organisations.php:223
+msgid "Organisation draft updated. <a target=\"_blank\" href=\"%s\">Preview Organisation</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:250
+msgid "Add the name of the Organisation"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:272
+msgctxt "taxonomy general name"
+msgid "Organisation Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:273
+msgctxt "taxonomy singular name"
+msgid "Organisation Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:274
+msgid "Search Organisation Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:275
+msgid "All Organisation Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:276
+msgid "Parent Organisation Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:277
+msgid "Parent Organisation Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:278
+msgid "Edit Organisation Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:279
+msgid "Update Organisation Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:280
+msgid "Add New Organisation Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:281
+msgid "New Organisation Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:282
+msgid "Organisation Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:283
+msgid "No Organisation Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:327
+#: includes/cpt/class-cpt-partners.php:272
+msgctxt "taxonomy general name"
+msgid "Partner Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:328
+#: includes/cpt/class-cpt-partners.php:273
+msgctxt "taxonomy singular name"
+msgid "Partner Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:329
+#: includes/cpt/class-cpt-partners.php:274
+msgid "Search Partner Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:330
+#: includes/cpt/class-cpt-partners.php:275
+msgid "All Partner Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:331
+#: includes/cpt/class-cpt-partners.php:276
+msgid "Parent Partner Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:332
+#: includes/cpt/class-cpt-partners.php:277
+msgid "Parent Partner Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:333
+#: includes/cpt/class-cpt-partners.php:278
+msgid "Edit Partner Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:334
+#: includes/cpt/class-cpt-partners.php:279
+msgid "Update Partner Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:335
+#: includes/cpt/class-cpt-partners.php:280
+msgid "Add New Partner Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:336
+#: includes/cpt/class-cpt-partners.php:281
+msgid "New Partner Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:337
+#: includes/cpt/class-cpt-partners.php:282
+msgid "Partner Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-organisations.php:338
+#: includes/cpt/class-cpt-partners.php:283
+msgid "No Partner Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:73
+msgid "Parent"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:75
+msgid "Add New Parent"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:76
+msgid "Edit Parent"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:77
+msgid "New Parent"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:78
+msgid "All Parents"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:79
+msgid "View Parent"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:80
+msgid "Search Parents"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:81
+msgid "No matching Parent found"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:82
+msgid "No Parents found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:104
+msgid "A parent post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-parents.php:154
+msgid "Parent updated. <a href=\"%s\">View Parent</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:161
+msgid "Parent updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-parents.php:170
+msgid "Parent restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-parents.php:181
+msgid "Parent published. <a href=\"%s\">View Parent</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:186
+msgid "Parent saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-parents.php:191
+msgid "Parent submitted. <a target=\"_blank\" href=\"%s\">Preview Parent</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-parents.php:198
+msgid "Parent scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Parent</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-parents.php:207
+msgid "Parent draft updated. <a target=\"_blank\" href=\"%s\">Preview Parent</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:234
+msgid "Add the name of the Parent"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:256
+msgctxt "taxonomy general name"
+msgid "Parent Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:257
+msgctxt "taxonomy singular name"
+msgid "Parent Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:258
+msgid "Search Parent Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:259
+msgid "All Parent Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:260
+msgid "Parent Parent Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:261
+msgid "Parent Parent Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:262
+msgid "Edit Parent Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:263
+msgid "Update Parent Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:264
+msgid "Add New Parent Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:265
+msgid "New Parent Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:266
+msgid "Parent Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-parents.php:267
+msgid "No Parent Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:89
+msgid "Participant"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:91
+msgid "Add New Participant"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:92
+msgid "Edit Participant"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:93
+msgid "New Participant"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:94
+msgid "All Participants"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:95
+msgid "View Participant"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:96
+msgid "Search Participants"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:97
+msgid "No matching Participant found"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:98
+msgid "No Participants found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:120
+msgid "A participant post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-participants.php:170
+msgid "Participant updated. <a href=\"%s\">View Participant</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:177
+msgid "Participant updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-participants.php:186
+msgid "Participant restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-participants.php:197
+msgid "Participant published. <a href=\"%s\">View Participant</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:202
+msgid "Participant saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-participants.php:207
+msgid "Participant submitted. <a target=\"_blank\" href=\"%s\">Preview Participant</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-participants.php:214
+msgid "Participant scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Participant</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-participants.php:223
+msgid "Participant draft updated. <a target=\"_blank\" href=\"%s\">Preview Participant</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:250
+msgid "Add the name of the Participant"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:272
+msgctxt "taxonomy general name"
+msgid "Participant Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:273
+msgctxt "taxonomy singular name"
+msgid "Participant Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:274
+msgid "Search Participant Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:275
+msgid "All Participant Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:276
+msgid "Parent Participant Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:277
+msgid "Parent Participant Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:278
+msgid "Edit Participant Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:279
+msgid "Update Participant Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:280
+msgid "Add New Participant Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:281
+msgid "New Participant Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:282
+msgid "Participant Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:283
+msgid "No Participant Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:327
+msgctxt "taxonomy general name"
+msgid "Participant Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:328
+msgctxt "taxonomy singular name"
+msgid "Participant Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:329
+msgid "Search Participant Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:330
+msgid "All Participant Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:331
+msgid "Parent Participant Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:332
+msgid "Parent Participant Tag:"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:333
+msgid "Edit Participant Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:334
+msgid "Update Participant Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:335
+msgid "Add New Participant Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:336
+msgid "New Participant Tag Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:337
+msgid "Participant Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-participants.php:338
+msgid "No Participant Tags found"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:89
+msgid "Partner"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:91
+msgid "Add New Partner"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:92
+msgid "Edit Partner"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:93
+msgid "New Partner"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:94
+msgid "All Partners"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:95
+msgid "View Partner"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:96
+msgid "Search Partners"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:97
+msgid "No matching Partner found"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:98
+msgid "No Partners found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:120
+msgid "A partner post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-partners.php:170
+msgid "Partner updated. <a href=\"%s\">View Partner</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:177
+msgid "Partner updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-partners.php:186
+msgid "Partner restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-partners.php:197
+msgid "Partner published. <a href=\"%s\">View Partner</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:202
+msgid "Partner saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-partners.php:207
+msgid "Partner submitted. <a target=\"_blank\" href=\"%s\">Preview Partner</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-partners.php:214
+msgid "Partner scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Partner</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-partners.php:223
+msgid "Partner draft updated. <a target=\"_blank\" href=\"%s\">Preview Partner</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:250
+msgid "Add the name of the Partner"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:327
+msgctxt "taxonomy general name"
+msgid "Partner Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:328
+msgctxt "taxonomy singular name"
+msgid "Partner Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:329
+msgid "Search Partner Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:330
+msgid "All Partner Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:331
+msgid "Parent Partner Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:332
+msgid "Parent Partner Tag:"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:333
+msgid "Edit Partner Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:334
+msgid "Update Partner Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:335
+msgid "Add New Partner Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:336
+msgid "New Partner Tag Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:337
+msgid "Partner Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-partners.php:338
+msgid "No Partner Tags found"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:89
+msgid "Speaker"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:91
+msgid "Add New Speaker"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:92
+msgid "Edit Speaker"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:93
+msgid "New Speaker"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:94
+msgid "All Speakers"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:95
+msgid "View Speaker"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:96
+msgid "Search Speakers"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:97
+msgid "No matching Speaker found"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:98
+msgid "No Speakers found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:120
+msgid "An speaker post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-speakers.php:170
+msgid "Speaker updated. <a href=\"%s\">View Speaker</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:177
+msgid "Speaker updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-speakers.php:186
+msgid "Speaker restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-speakers.php:197
+msgid "Speaker published. <a href=\"%s\">View Speaker</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:202
+msgid "Speaker saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-speakers.php:207
+msgid "Speaker submitted. <a target=\"_blank\" href=\"%s\">Preview Speaker</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-speakers.php:214
+msgid "Speaker scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Speaker</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-speakers.php:223
+msgid "Speaker draft updated. <a target=\"_blank\" href=\"%s\">Preview Speaker</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:250
+msgid "Add the name of the Speaker"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:272
+msgctxt "taxonomy general name"
+msgid "Speaker Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:273
+msgctxt "taxonomy singular name"
+msgid "Speaker Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:274
+msgid "Search Speaker Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:275
+msgid "All Speaker Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:276
+msgid "Parent Speaker Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:277
+msgid "Parent Speaker Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:278
+msgid "Edit Speaker Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:279
+msgid "Update Speaker Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:280
+msgid "Add New Speaker Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:281
+msgid "New Speaker Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:282
+msgid "Speaker Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:283
+msgid "No Speaker Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:327
+msgctxt "taxonomy general name"
+msgid "Speaker Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:328
+msgctxt "taxonomy singular name"
+msgid "Speaker Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:329
+msgid "Search Speaker Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:330
+msgid "All Speaker Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:331
+msgid "Parent Speaker Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:332
+msgid "Parent Speaker Tag:"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:333
+msgid "Edit Speaker Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:334
+msgid "Update Speaker Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:335
+msgid "Add New Speaker Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:336
+msgid "New Speaker Tag Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:337
+msgid "Speaker Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-speakers.php:338
+msgid "No Speaker Tags found"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:105
+msgid "Sponsor"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:107
+msgid "Add New Sponsor"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:108
+msgid "Edit Sponsor"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:109
+msgid "New Sponsor"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:110
+msgid "All Sponsors"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:111
+msgid "View Sponsor"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:112
+msgid "Search Sponsors"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:113
+msgid "No matching Sponsor found"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:114
+msgid "No Sponsors found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:136
+msgid "An sponsor post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-sponsors.php:186
+msgid "Sponsor updated. <a href=\"%s\">View Sponsor</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:193
+msgid "Sponsor updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-sponsors.php:202
+msgid "Sponsor restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-sponsors.php:213
+msgid "Sponsor published. <a href=\"%s\">View Sponsor</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:218
+msgid "Sponsor saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-sponsors.php:223
+msgid "Sponsor submitted. <a target=\"_blank\" href=\"%s\">Preview Sponsor</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-sponsors.php:230
+msgid "Sponsor scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Sponsor</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-sponsors.php:239
+msgid "Sponsor draft updated. <a target=\"_blank\" href=\"%s\">Preview Sponsor</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:266
+msgid "Add the name of the Sponsor"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:288
+msgctxt "taxonomy general name"
+msgid "Sponsor Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:289
+msgctxt "taxonomy singular name"
+msgid "Sponsor Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:290
+msgid "Search Sponsor Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:291
+msgid "All Sponsor Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:292
+msgid "Parent Sponsor Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:293
+msgid "Parent Sponsor Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:294
+msgid "Edit Sponsor Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:295
+msgid "Update Sponsor Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:296
+msgid "Add New Sponsor Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:297
+msgid "New Sponsor Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:298
+msgid "Sponsor Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:299
+msgid "No Sponsor Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:343
+msgctxt "taxonomy general name"
+msgid "Sponsor Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:344
+msgctxt "taxonomy singular name"
+msgid "Sponsor Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:345
+msgid "Search Sponsor Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:346
+msgid "All Sponsor Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:347
+msgid "Parent Sponsor Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:348
+msgid "Parent Sponsor Tag:"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:349
+msgid "Edit Sponsor Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:350
+msgid "Update Sponsor Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:351
+msgid "Add New Sponsor Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:352
+msgid "New Sponsor Tag Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:353
+msgid "Sponsor Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-sponsors.php:354
+msgid "No Sponsor Tags found"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:105
+msgid "Student"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:107
+msgid "Add New Student"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:108
+msgid "Edit Student"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:109
+msgid "New Student"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:110
+msgid "All Students"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:111
+msgid "View Student"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:112
+msgid "Search Students"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:113
+msgid "No matching Student found"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:114
+msgid "No Students found in Trash"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:136
+msgid "A student post type"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-students.php:186
+msgid "Student updated. <a href=\"%s\">View Student</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:193
+msgid "Student updated."
+msgstr ""
+
+#. translators: %s: The date and time of the revision.
+#: includes/cpt/class-cpt-students.php:202
+msgid "Student restored to revision from %s"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-students.php:213
+msgid "Student published. <a href=\"%s\">View Student</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:218
+msgid "Student saved."
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-students.php:223
+msgid "Student submitted. <a target=\"_blank\" href=\"%s\">Preview Student</a>"
+msgstr ""
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/cpt/class-cpt-students.php:230
+msgid "Student scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Student</a>"
+msgstr ""
+
+#. translators: %s: The permalink.
+#: includes/cpt/class-cpt-students.php:239
+msgid "Student draft updated. <a target=\"_blank\" href=\"%s\">Preview Student</a>"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:266
+msgid "Add the name of the Student"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:288
+msgctxt "taxonomy general name"
+msgid "Student Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:289
+msgctxt "taxonomy singular name"
+msgid "Student Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:290
+msgid "Search Student Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:291
+msgid "All Student Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:292
+msgid "Parent Student Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:293
+msgid "Parent Student Type:"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:294
+msgid "Edit Student Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:295
+msgid "Update Student Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:296
+msgid "Add New Student Type"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:297
+msgid "New Student Type Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:298
+msgid "Student Types"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:299
+msgid "No Student Types found"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:343
+msgctxt "taxonomy general name"
+msgid "Student Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:344
+msgctxt "taxonomy singular name"
+msgid "Student Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:345
+msgid "Search Student Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:346
+msgid "All Student Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:347
+msgid "Parent Student Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:348
+msgid "Parent Student Tag:"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:349
+msgid "Edit Student Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:350
+msgid "Update Student Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:351
+msgid "Add New Student Tag"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:352
+msgid "New Student Tag Name"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:353
+msgid "Student Tags"
+msgstr ""
+
+#: includes/cpt/class-cpt-students.php:354
+msgid "No Student Tags found"
+msgstr ""
