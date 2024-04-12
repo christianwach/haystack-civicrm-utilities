@@ -26,7 +26,7 @@ class Students extends Base {
 	 * Plugin object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU
+	 * @var Plugin
 	 */
 	public $plugin;
 

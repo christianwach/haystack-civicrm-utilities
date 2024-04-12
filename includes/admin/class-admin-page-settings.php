@@ -26,7 +26,7 @@ class Page_Settings extends Page_Base {
 	 * Plugin object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU
+	 * @var Plugin
 	 */
 	public $plugin;
 
@@ -34,7 +34,7 @@ class Page_Settings extends Page_Base {
 	 * Admin object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_Admin
+	 * @var Admin\Loader
 	 */
 	public $admin;
 

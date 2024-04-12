@@ -27,7 +27,7 @@ class Loader {
 	 * Plugin object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU
+	 * @var Plugin
 	 */
 	public $plugin;
 
@@ -35,7 +35,7 @@ class Loader {
 	 * Activities CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Activities
+	 * @var CPT\Activities
 	 */
 	public $activities;
 
@@ -43,7 +43,7 @@ class Loader {
 	 * Employees CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Employees
+	 * @var CPT\Employees
 	 */
 	public $employees;
 
@@ -51,7 +51,7 @@ class Loader {
 	 * Households CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Households
+	 * @var CPT\Households
 	 */
 	public $households;
 
@@ -59,7 +59,7 @@ class Loader {
 	 * Organisations CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Organisations
+	 * @var CPT\Organisations
 	 */
 	public $organisations;
 
@@ -67,7 +67,7 @@ class Loader {
 	 * Parents CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Parents
+	 * @var CPT\Parents
 	 */
 	public $parents;
 
@@ -75,7 +75,7 @@ class Loader {
 	 * Partners CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Partners
+	 * @var CPT\Partners
 	 */
 	public $partners;
 
@@ -83,7 +83,7 @@ class Loader {
 	 * Participants CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Participants
+	 * @var CPT\Participants
 	 */
 	public $participants;
 
@@ -91,7 +91,7 @@ class Loader {
 	 * Speakers CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Speakers
+	 * @var CPT\Speakers
 	 */
 	public $speakers;
 
@@ -99,7 +99,7 @@ class Loader {
 	 * Sponsors CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Sponsors
+	 * @var CPT\Sponsors
 	 */
 	public $sponsors;
 
@@ -107,7 +107,7 @@ class Loader {
 	 * Students CPT object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_CPT_Students
+	 * @var CPT\Students
 	 */
 	public $students;
 
@@ -155,7 +155,7 @@ class Loader {
 		$this->register_hooks();
 
 		/**
-		 * Broadcast that this class is active.
+		 * Fires when this class is loaded.
 		 *
 		 * @since 1.0.0
 		 */

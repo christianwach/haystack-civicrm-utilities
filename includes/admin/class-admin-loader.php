@@ -26,7 +26,7 @@ class Loader extends Base {
 	 * Plugin object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU
+	 * @var Plugin
 	 */
 	public $plugin;
 
@@ -42,7 +42,7 @@ class Loader extends Base {
 	 * Settings Page object.
 	 *
 	 * @since 1.0.0
-	 * @var Haystack_CU_Page_Settings
+	 * @var Admin\Page_Settings
 	 */
 	private $page_settings;
 
@@ -82,7 +82,7 @@ class Loader extends Base {
 		$this->register_hooks();
 
 		/**
-		 * Broadcast that this class is active.
+		 * Fires when this class is loaded.
 		 *
 		 * @since 1.0.0
 		 */
