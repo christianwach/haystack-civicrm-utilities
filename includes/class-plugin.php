@@ -39,6 +39,14 @@ class Plugin {
 	public $cpt;
 
 	/**
+	 * User Interface loader object.
+	 *
+	 * @since 1.0.0
+	 * @var UI\Loader
+	 */
+	public $ui;
+
+	/**
 	 * Class constructor.
 	 *
 	 * @since 1.0.0
@@ -89,6 +97,7 @@ class Plugin {
 		// Init objects.
 		$this->admin = new Admin\Loader( $this );
 		$this->cpt   = new CPT\Loader( $this );
+		$this->ui    = new UI\Loader( $this );
 
 	}
 
