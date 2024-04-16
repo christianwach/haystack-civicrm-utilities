@@ -47,12 +47,28 @@ class Menu {
 	private $metabox_path = 'assets/templates/wordpress/settings/metaboxes/';
 
 	/**
+	 * Partials template directory path.
+	 *
+	 * @since 1.0.0
+	 * @var string
+	 */
+	private $partial_path = 'assets/templates/wordpress/settings/partials/';
+
+	/**
 	 * UI Menu Components setting key in Settings.
 	 *
 	 * @since 1.0.0
 	 * @var string
 	 */
 	public $key_menu_enabled = 'menu_enabled';
+
+	/**
+	 * Menu modification setting meta key used in User Meta.
+	 *
+	 * @since 1.0.0
+	 * @var string
+	 */
+	public $key_user_menu_enabled = 'menu_enabled';
 
 	/**
 	 * Class constructor.
@@ -133,6 +149,13 @@ class Menu {
 
 		// Modify the CiviCRM Admin Utilities menu.
 		add_action( 'civicrm_admin_utilities_menu_after', [ $this, 'menu_alter' ], 20, 3 );
+
+		// Add menu setting to the Edit User screen.
+		add_action( 'personal_options', [ $this, 'profile_settings_render' ] );
+
+		// Save menu setting on the Edit User screen.
+		add_action( 'personal_options_update', [ $this, 'profile_settings_update' ] );
+		add_action( 'edit_user_profile_update', [ $this, 'profile_settings_update' ] );
 
 		/**
 		 * Fires when all UI objects have been loaded.
@@ -246,11 +269,11 @@ class Menu {
 	}
 
 	/**
-	 * Gets the "Active Custom Post Types" setting.
+	 * Gets the "Modify Shortcuts Menu" setting.
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return array $menu_enabled The setting if found, default otherwise.
+	 * @return string $menu_enabled The setting if found, default otherwise.
 	 */
 	public function setting_menu_enabled_get() {
 
@@ -263,16 +286,168 @@ class Menu {
 	}
 
 	/**
-	 * Sets the "Active Custom Post Types" setting.
+	 * Sets the "Modify Shortcuts Menu" setting.
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param array $menu_enabled The setting value.
+	 * @param string $menu_enabled The setting value.
 	 */
 	public function setting_menu_enabled_set( $menu_enabled ) {
 
 		// Set the setting.
 		$this->plugin->admin->setting_set( $this->key_menu_enabled, $menu_enabled );
+
+	}
+
+	/**
+	 * Gets the default "Modify Shortcuts Menu" setting.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return string $menu_enabled The default setting value.
+	 */
+	public function profile_menu_enabled_default_get() {
+
+		// Defaults to not active.
+		$menu_enabled = 'no';
+
+		// --<
+		return $menu_enabled;
+
+	}
+
+	/**
+	 * Gets the "Modify Shortcuts Menu" setting for a given User ID.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param int $user_id The WordPress User ID.
+	 * @return string $menu_enabled The setting if found, default otherwise.
+	 */
+	public function profile_menu_enabled_get( $user_id ) {
+
+		// Get the setting.
+		$menu_enabled = get_user_meta( $user_id, $this->key_user_menu_enabled, true );
+
+		// Return setting or default if empty.
+		return ! empty( $menu_enabled ) ? $menu_enabled : $this->profile_menu_enabled_default_get();
+
+	}
+
+	/**
+	 * Sets the "Modify Shortcuts Menu" setting for a given User ID.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param int   $user_id The WordPress User ID.
+	 * @param array $menu_enabled The setting value.
+	 */
+	public function profile_menu_enabled_set( $user_id, $menu_enabled ) {
+
+		// Set the setting.
+		update_user_meta( $user_id, $this->key_user_menu_enabled, $menu_enabled );
+
+	}
+
+	/**
+	 * Adds menu modification setting User Edit screen.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param WP_User $user The displayed WordPress User object.
+	 */
+	public function profile_settings_render( $user ) {
+
+		// Bail if menu modification is not enabled.
+		$menu_modification_enabled = $this->setting_menu_enabled_get();
+		if ( 'yes' !== $menu_modification_enabled ) {
+			return;
+		}
+
+		// Bail if the current User can't edit the displayed User.
+		if ( ! current_user_can( 'edit_user', $user->ID ) ) {
+			return;
+		}
+
+		// Bail if CiviCRM can't be initialised.
+		if ( ! function_exists( 'civi_wp' ) || ! civi_wp()->initialize() ) {
+			return;
+		}
+
+		// Search for the Contact.
+		$contact_id = \CRM_Core_BAO_UFMatch::getContactId( $user->ID );
+		if ( ! $contact_id ) {
+			return;
+		}
+
+		// Bail if displayed User cannot administer CiviCRM.
+		if ( ! \CRM_Core_Permission::check( 'administer_civicrm', $contact_id ) ) {
+			return;
+		}
+
+		// Get the menu modification setting for this User.
+		$menu_enabled = $this->profile_menu_enabled_get( $user->ID );
+
+		// Include template file.
+		include HAYSTACK_CU_PATH . $this->partial_path . 'partial-settings-ui-menu.php';
+
+	}
+
+	/**
+	 * Saves the menu modification setting on the User Edit screen.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param int $user_id The User ID being updated.
+	 */
+	public function profile_settings_update( $user_id ) {
+
+		// Bail if menu modification is not enabled.
+		$menu_modification_enabled = $this->setting_menu_enabled_get();
+		if ( 'yes' !== $menu_modification_enabled ) {
+			return;
+		}
+
+		// Bail if the auth token isn't present.
+		if ( ! isset( $_POST['_wpnonce'] ) ) {
+			return;
+		}
+
+		// Make sure all's well with the world.
+		check_admin_referer( 'update-user_' . $user_id );
+
+		// Bail if the current User can't edit the displayed User.
+		if ( ! current_user_can( 'edit_user', $user_id ) ) {
+			return;
+		}
+
+		// Bail if CiviCRM can't be initialised.
+		if ( ! function_exists( 'civi_wp' ) || ! civi_wp()->initialize() ) {
+			return;
+		}
+
+		// Search for the Contact.
+		$contact_id = \CRM_Core_BAO_UFMatch::getContactId( $user_id );
+		if ( ! $contact_id ) {
+			return;
+		}
+
+		// Bail if displayed User cannot administer CiviCRM.
+		if ( ! \CRM_Core_Permission::check( 'administer_civicrm', $contact_id ) ) {
+			return;
+		}
+
+		// Find and sanitise data.
+		$menu_enabled = filter_input( INPUT_POST, $this->key_user_menu_enabled, FILTER_SANITIZE_SPECIAL_CHARS );
+		$menu_enabled = sanitize_text_field( wp_unslash( $menu_enabled ) );
+
+		// Bail if there's nothing to save.
+		if ( empty( $menu_enabled ) ) {
+			return;
+		}
+
+		// Update the setting for the User.
+		$this->profile_menu_enabled_set( $user_id, $menu_enabled );
 
 	}
 
@@ -287,8 +462,20 @@ class Menu {
 	 */
 	public function menu_alter( $id, $components, $wp_admin_bar ) {
 
-		// Bail if not modifying the menu.
-		$menu_enabled = $this->setting_menu_enabled_get();
+		// Bail if menu modification is not enabled.
+		$menu_modification_enabled = $this->setting_menu_enabled_get();
+		if ( empty( $menu_modification_enabled ) || 'no' === $menu_modification_enabled ) {
+			return;
+		}
+
+		// Get the current User ID.
+		$current_user_id = get_current_user_id();
+		if ( 0 === $current_user_id ) {
+			return;
+		}
+
+		// Bail if menu modification is not enabled for the current User.
+		$menu_enabled = $this->profile_menu_enabled_get( $current_user_id );
 		if ( empty( $menu_enabled ) || 'no' === $menu_enabled ) {
 			return;
 		}

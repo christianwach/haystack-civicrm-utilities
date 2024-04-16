@@ -2,7 +2,7 @@
 /**
  * Modify Shortcuts Menu settings template.
  *
- * Handles markup for the Active Custom Post Types meta box.
+ * Handles markup for the "User Interface" meta box.
  *
  * @package Haystack_CU
  * @since 1.0.0
@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 				<option value="no" <?php selected( $menu_enabled, 'no' ); ?>><?php esc_html_e( 'No', 'haystack-civicrm-utilities' ); ?></option>
 				<option value="yes" <?php selected( $menu_enabled, 'yes' ); ?>><?php esc_html_e( 'Yes', 'haystack-civicrm-utilities' ); ?></option>
 			</select>
-			<p class="description"><?php esc_html_e( 'Replaces dashboard links with ones more useful for developers.', 'haystack-civicrm-utilities' ); ?></p>
+			<p class="description"><?php esc_html_e( 'Allow Users who can administer CiviCRM to replace links in the CiviCRM Admin Utilities Shortcuts Menu with ones more useful for developers.', 'haystack-civicrm-utilities' ); ?></p>
 		</td>
 	</tr>
 </table>
