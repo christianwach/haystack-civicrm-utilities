@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 				<option value="no" <?php selected( $menu_enabled, 'no' ); ?>><?php esc_html_e( 'No', 'haystack-civicrm-utilities' ); ?></option>
 				<option value="yes" <?php selected( $menu_enabled, 'yes' ); ?>><?php esc_html_e( 'Yes', 'haystack-civicrm-utilities' ); ?></option>
 			</select>
-			<p class="description"><?php esc_html_e( 'Replaces dashboard links with ones more useful for developers.', 'haystack-admin-utilities' ); ?></p>
+			<p class="description"><?php esc_html_e( 'Replaces dashboard links with ones more useful for developers.', 'haystack-civicrm-utilities' ); ?></p>
 		</td>
 	</tr>
 </table>
