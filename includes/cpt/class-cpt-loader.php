@@ -325,6 +325,11 @@ class Loader {
 		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$post_types_enabled = filter_input( INPUT_POST, $this->key_post_types_enabled, FILTER_DEFAULT, FILTER_REQUIRE_ARRAY );
 
+		// Ensure we have an array.
+		if ( empty( $post_types_enabled ) ) {
+			$post_types_enabled = [];
+		}
+
 		// Sanitise array contents.
 		if ( ! empty( $post_types_enabled ) ) {
 			array_walk(
