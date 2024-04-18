@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-03-04T16:12:19+00:00\n"
+"POT-Creation-Date: 2024-04-18T10:04:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: haystack-civicrm-utilities\n"
@@ -57,36 +57,31 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
+#: assets/templates/wordpress/settings/metaboxes/metabox-settings-ui-menu.php:18
+#: assets/templates/wordpress/settings/partials/partial-settings-ui-menu.php:17
+msgid "Modify Shortcuts Menu"
+msgstr ""
+
+#: assets/templates/wordpress/settings/metaboxes/metabox-settings-ui-menu.php:21
+#: assets/templates/wordpress/settings/partials/partial-settings-ui-menu.php:20
+msgid "No"
+msgstr ""
+
+#: assets/templates/wordpress/settings/metaboxes/metabox-settings-ui-menu.php:22
+#: assets/templates/wordpress/settings/partials/partial-settings-ui-menu.php:21
+msgid "Yes"
+msgstr ""
+
+#: assets/templates/wordpress/settings/metaboxes/metabox-settings-ui-menu.php:24
+msgid "Allow Users who can administer CiviCRM to replace links in the CiviCRM Admin Utilities Shortcuts Menu with ones more useful for developers."
+msgstr ""
+
 #: assets/templates/wordpress/settings/pages/page-settings.php:24
 msgid "Settings saved."
 msgstr ""
 
-#: includes/admin/class-admin-loader.php:134
-msgid "All Contribution Pages"
-msgstr ""
-
-#: includes/admin/class-admin-loader.php:148
-msgid "All Memberships"
-msgstr ""
-
-#: includes/admin/class-admin-loader.php:162
-msgid "All Events"
-msgstr ""
-
-#: includes/admin/class-admin-loader.php:176
-msgid "All Mailings"
-msgstr ""
-
-#: includes/admin/class-admin-loader.php:192
-msgid "WordPress Permissions"
-msgstr ""
-
-#: includes/admin/class-admin-loader.php:204
-msgid "API Explorer v3"
-msgstr ""
-
-#: includes/admin/class-admin-loader.php:216
-msgid "API Explorer v4"
+#: assets/templates/wordpress/settings/partials/partial-settings-ui-menu.php:23
+msgid "Replace links in the CiviCRM Admin Utilities Shortcuts Menu with ones more useful for developers."
 msgstr ""
 
 #: includes/admin/class-admin-page-settings.php:114
@@ -104,7 +99,7 @@ msgstr ""
 
 #: includes/cpt/class-cpt-activities.php:72
 #: includes/cpt/class-cpt-activities.php:83
-#: includes/cpt/class-cpt-loader.php:368
+#: includes/cpt/class-cpt-loader.php:373
 msgid "Activities"
 msgstr ""
 
@@ -302,7 +297,7 @@ msgstr ""
 
 #: includes/cpt/class-cpt-employees.php:72
 #: includes/cpt/class-cpt-employees.php:83
-#: includes/cpt/class-cpt-loader.php:369
+#: includes/cpt/class-cpt-loader.php:374
 msgid "Employees"
 msgstr ""
 
@@ -440,7 +435,7 @@ msgstr ""
 
 #: includes/cpt/class-cpt-households.php:72
 #: includes/cpt/class-cpt-households.php:83
-#: includes/cpt/class-cpt-loader.php:370
+#: includes/cpt/class-cpt-loader.php:375
 msgid "Households"
 msgstr ""
 
@@ -580,43 +575,43 @@ msgstr ""
 msgid "Custom Post Types"
 msgstr ""
 
-#: includes/cpt/class-cpt-loader.php:371
+#: includes/cpt/class-cpt-loader.php:376
 #: includes/cpt/class-cpt-organisations.php:88
 #: includes/cpt/class-cpt-organisations.php:99
 msgid "Organisations"
 msgstr ""
 
-#: includes/cpt/class-cpt-loader.php:372
+#: includes/cpt/class-cpt-loader.php:377
 #: includes/cpt/class-cpt-parents.php:72
 #: includes/cpt/class-cpt-parents.php:83
 msgid "Parents"
 msgstr ""
 
-#: includes/cpt/class-cpt-loader.php:373
+#: includes/cpt/class-cpt-loader.php:378
 #: includes/cpt/class-cpt-participants.php:88
 #: includes/cpt/class-cpt-participants.php:99
 msgid "Participants"
 msgstr ""
 
-#: includes/cpt/class-cpt-loader.php:374
+#: includes/cpt/class-cpt-loader.php:379
 #: includes/cpt/class-cpt-partners.php:88
 #: includes/cpt/class-cpt-partners.php:99
 msgid "Partners"
 msgstr ""
 
-#: includes/cpt/class-cpt-loader.php:375
+#: includes/cpt/class-cpt-loader.php:380
 #: includes/cpt/class-cpt-speakers.php:88
 #: includes/cpt/class-cpt-speakers.php:99
 msgid "Speakers"
 msgstr ""
 
-#: includes/cpt/class-cpt-loader.php:376
+#: includes/cpt/class-cpt-loader.php:381
 #: includes/cpt/class-cpt-sponsors.php:104
 #: includes/cpt/class-cpt-sponsors.php:115
 msgid "Sponsors"
 msgstr ""
 
-#: includes/cpt/class-cpt-loader.php:377
+#: includes/cpt/class-cpt-loader.php:382
 #: includes/cpt/class-cpt-students.php:104
 #: includes/cpt/class-cpt-students.php:115
 msgid "Students"
@@ -1806,4 +1801,36 @@ msgstr ""
 
 #: includes/cpt/class-cpt-students.php:354
 msgid "No Student Tags found"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:203
+msgid "User Interface"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:490
+msgid "All Contribution Pages"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:504
+msgid "All Memberships"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:518
+msgid "All Events"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:532
+msgid "All Mailings"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:548
+msgid "WordPress Permissions"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:560
+msgid "API Explorer v3"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:572
+msgid "API Explorer v4"
 msgstr ""
