@@ -539,6 +539,18 @@ class Menu {
 		// I don't need the CiviCRM Admin Utilities link.
 		$wp_admin_bar->remove_node( 'cau-11' );
 
+		// Add Custom Fields.
+		if ( civicrm_au()->single->check_permission( 'access CiviCRM' ) ) {
+			$wp_admin_bar->add_node(
+				[
+					'id'     => 'hay-cf',
+					'parent' => $id,
+					'title'  => __( 'Custom Fields', 'haystack-civicrm-utilities' ),
+					'href'   => civicrm_au()->single->get_link( 'civicrm/admin/custom/group', 'reset=1' ),
+				]
+			);
+		}
+
 		// Add WordPress Permissions.
 		if ( civicrm_au()->single->check_permission( 'access CiviCRM' ) ) {
 			$wp_admin_bar->add_node(
