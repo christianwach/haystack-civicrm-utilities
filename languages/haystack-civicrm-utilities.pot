@@ -2,16 +2,16 @@
 # This file is distributed under the same license as the Haystack CiviCRM Utilities plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Haystack CiviCRM Utilities 1.0.0b\n"
+"Project-Id-Version: Haystack CiviCRM Utilities 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/haystack-civicrm-utilities\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-18T10:04:16+00:00\n"
+"POT-Creation-Date: 2024-12-04T12:20:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: haystack-civicrm-utilities\n"
 
 #. Plugin Name of the plugin
@@ -1824,13 +1824,17 @@ msgid "All Mailings"
 msgstr ""
 
 #: includes/ui/class-ui-menu.php:548
-msgid "WordPress Permissions"
+msgid "Custom Fields"
 msgstr ""
 
 #: includes/ui/class-ui-menu.php:560
-msgid "API Explorer v3"
+msgid "WordPress Permissions"
 msgstr ""
 
 #: includes/ui/class-ui-menu.php:572
+msgid "API Explorer v3"
+msgstr ""
+
+#: includes/ui/class-ui-menu.php:584
 msgid "API Explorer v4"
 msgstr ""
