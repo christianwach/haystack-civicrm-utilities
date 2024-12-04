@@ -9,6 +9,10 @@
  * Version:           1.0.1a
  * Author:            Christian Wach
  * Author URI:        https://haystack.co.uk
+ * License:           GPLv2 or later
+ * License URI:       https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * Requires at least: 5.7
+ * Requires PHP:      7.4
  * Text Domain:       haystack-civicrm-utilities
  * Domain Path:       /languages
  *
