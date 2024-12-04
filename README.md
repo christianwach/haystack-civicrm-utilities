@@ -5,7 +5,7 @@
 **Tags:** civicrm, admin, utility, development<br/>
 **Requires at least:** 4.9<br/>
 **Tested up to:** 6.5<br/>
-**Stable tag:** 1.0.0<br/>
+**Stable tag:** 1.0.1a<br/>
 **License:** GPLv2 or later<br/>
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
