@@ -334,7 +334,7 @@ class Loader {
 		if ( ! empty( $post_types_enabled ) ) {
 			array_walk(
 				$post_types_enabled,
-				function( &$item ) {
+				function ( &$item ) {
 					$item = sanitize_text_field( wp_unslash( $item ) );
 				}
 			);
