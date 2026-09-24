@@ -291,11 +291,13 @@ abstract class Base {
 	 * Deletes the settings WordPress option.
 	 *
 	 * @since 1.0.0
+	 *
+	 * @return boolean $success True if successful, or false otherwise.
 	 */
 	public function settings_delete() {
 
 		// Delete the option.
-		$this->option_delete( $this->option_settings );
+		return $this->option_delete( $this->option_settings );
 
 	}
 
