@@ -113,7 +113,7 @@ class Plugin {
 		add_action( 'deactivated_plugin', [ $this, 'plugin_deactivated' ], 10, 2 );
 
 		// Load translation.
-		add_action( 'plugins_loaded', [ $this, 'translation' ] );
+		add_action( 'init', [ $this, 'translation' ] );
 
 	}
 
