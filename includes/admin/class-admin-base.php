@@ -181,7 +181,7 @@ abstract class Base {
 		 *
 		 * @since 1.0.0
 		 */
-		do_action( 'hay_cu/admin/settings/initialised' );
+		do_action( $this->hook_prefix . '/admin/settings/initialised' );
 
 		// We're done.
 		$done = true;
