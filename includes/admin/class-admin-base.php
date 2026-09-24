@@ -151,7 +151,7 @@ abstract class Base {
 	/**
 	 * Initialise settings.
 	 *
-	 * @since 4.0
+	 * @since 1.0.0
 	 */
 	public function settings_initialise() {
 
@@ -439,7 +439,7 @@ abstract class Base {
 	/**
 	 * Gets the installed plugin version.
 	 *
-	 * @since 4.0
+	 * @since 1.0.0
 	 *
 	 * @return string|bool $version The installed version, or false if none found.
 	 */
