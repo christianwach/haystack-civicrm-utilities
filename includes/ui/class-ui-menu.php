@@ -211,7 +211,7 @@ class Menu {
 	}
 
 	/**
-	 * Renders "Custom Post Types" meta box on Settings screen.
+	 * Renders "User Interface" meta box on Settings screen.
 	 *
 	 * @since 1.0.0
 	 *
