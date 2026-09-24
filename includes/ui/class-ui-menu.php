@@ -158,11 +158,11 @@ class Menu {
 		add_action( 'edit_user_profile_update', [ $this, 'profile_settings_update' ] );
 
 		/**
-		 * Fires when all UI objects have been loaded.
+		 * Fires when UI functionality has been bootstrapped.
 		 *
 		 * @since 1.0.0
 		 */
-		do_action( 'hay_cu/ui/bootstrapped' );
+		do_action( 'hay_cu/ui/menu/bootstrapped' );
 
 	}
 
