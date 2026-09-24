@@ -51,7 +51,7 @@ class Loader extends Base {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param Haystack_CU $plugin The plugin object.
+	 * @param Plugin $plugin The plugin object.
 	 */
 	public function __construct( $plugin ) {
 

@@ -44,7 +44,7 @@ class Loader {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param object $plugin The plugin object.
+	 * @param Plugin $plugin The plugin object.
 	 */
 	public function __construct( $plugin ) {
 
