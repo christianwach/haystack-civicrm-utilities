@@ -39,28 +39,12 @@ class Page_Settings extends Page_Base {
 	public $admin;
 
 	/**
-	 * Form interval ID.
+	 * Example ID.
 	 *
 	 * @since 1.0.0
 	 * @var string
 	 */
-	public $form_interval_id = 'interval_id';
-
-	/**
-	 * Form sync direction ID.
-	 *
-	 * @since 1.0.0
-	 * @var string
-	 */
-	public $form_direction_id = 'direction_id';
-
-	/**
-	 * Form batch ID.
-	 *
-	 * @since 1.0.0
-	 * @var string
-	 */
-	public $form_batch_id = 'batch_id';
+	public $form_example_id = 'example_id';
 
 	/**
 	 * Class constructor.
@@ -93,9 +77,7 @@ class Page_Settings extends Page_Base {
 		$this->path_plugin = HAYSTACK_CU_PATH;
 
 		// Assign form IDs.
-		$this->form_interval_id  = $this->hook_prefix . '_' . $this->form_interval_id;
-		$this->form_direction_id = $this->hook_prefix . '_' . $this->form_direction_id;
-		$this->form_batch_id     = $this->hook_prefix . '_' . $this->form_batch_id;
+		$this->form_example_id = $this->hook_prefix . '_' . $this->form_example_id;
 
 		// Bootstrap parent.
 		parent::__construct();
